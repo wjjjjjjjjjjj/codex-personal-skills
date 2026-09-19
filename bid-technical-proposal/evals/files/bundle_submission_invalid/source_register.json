@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.1",
+  "project_name": "【待补充项目名】",
+  "generated_at": "",
+  "sources": [
+    {
+      "source_id": "SRC-001",
+      "source_level": "A",
+      "title": "采购需求",
+      "source_type": "tender",
+      "publisher": "合成采购人",
+      "file": "tender.md",
+      "version": "",
+      "effective_date": "",
+      "received_at": "2026-07-27",
+      "priority": 1,
+      "hash_sha256": "",
+      "location": "第三章",
+      "scope": "当前项目采购要求",
+      "status": "active",
+      "supersedes": [],
+      "registered_by": "评测执行人",
+      "notes": ""
+    },
+    {
+      "source_id": "SRC-001",
+      "source_level": "A",
+      "title": "旧版采购需求",
+      "source_type": "tender",
+      "publisher": "合成采购人",
+      "file": "old-tender.md",
+      "version": "0.9",
+      "effective_date": "",
+      "received_at": "2026-07-27",
+      "priority": 2,
+      "hash_sha256": "",
+      "location": "第三章",
+      "scope": "旧版采购要求",
+      "status": "superseded",
+      "supersedes": [],
+      "registered_by": "评测执行人",
+      "notes": ""
+    }
+  ]
+}

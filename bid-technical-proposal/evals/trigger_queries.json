@@ -1,0 +1,82 @@
+[
+  {
+    "query": "附件里是采购需求和评分表，只做技术标第六章，按评分项逐条写，商务报价不要碰。",
+    "should_trigger": true
+  },
+  {
+    "query": "帮我检查这份技术标是否漏掉了星号、三角号和井号条款，给出评分响应矩阵。",
+    "should_trigger": true
+  },
+  {
+    "query": "评分标准刚发了更正稿，技术方案从28分改成34分，按新表增量修订现有技术标，别重做商务部分。",
+    "should_trigger": true
+  },
+  {
+    "query": "把采购功能清单每一条做技术响应，未知参数留待确认，最后输出技术标Word。",
+    "should_trigger": true
+  },
+  {
+    "query": "只写实施、数据迁移、培训和售后服务技术方案，章节标题必须照评分表原文。",
+    "should_trigger": true
+  },
+  {
+    "query": "技术标的需求理解章节太像产品说明书，改成档案业务问题、建设结果和落地保障，其他章节不要动。",
+    "should_trigger": true
+  },
+  {
+    "query": "根据招标文件做技术偏离表、逐条响应矩阵和证据缺口清单，先不要生成Word。",
+    "should_trigger": true
+  },
+  {
+    "query": "审查这份技术标能不能拿满主观分，定位评分项、漏项和证明材料不足，不要修改原文件。",
+    "should_trigger": true
+  },
+  {
+    "query": "给我形成一份投标技术方案大纲，评分表在附件，章节和子项要逐字对齐。",
+    "should_trigger": true
+  },
+  {
+    "query": "产品资料不全但下周投标，只针对技术部分标出不能承诺的功能、风险数字和待产品确认项。",
+    "should_trigger": true
+  },
+  {
+    "query": "按招标文件做一整套响应文件，包含资格证明、报价、投标函、授权书和技术方案。",
+    "should_trigger": false
+  },
+  {
+    "query": "帮我编写中小企业声明函、授权委托书、保证金承诺和报价一览表。",
+    "should_trigger": false
+  },
+  {
+    "query": "给这个档案项目做一份领导汇报方案，重点讲必要性、价值和实施路径，不是招投标材料。",
+    "should_trigger": false
+  },
+  {
+    "query": "根据功能清单分配120万元报价，保留每条功能描述原文，输出Excel。",
+    "should_trigger": false
+  },
+  {
+    "query": "把现有技术标改成15分钟投标答辩PPT，沿用公司的深蓝橙色风格。",
+    "should_trigger": false
+  },
+  {
+    "query": "审查招标文件的资格条件有没有排他性和法律合规风险，只做风险意见。",
+    "should_trigger": false
+  },
+  {
+    "query": "只读取这份PDF招标文件，提取项目编号、采购人名称和响应截止时间。",
+    "should_trigger": false
+  },
+  {
+    "query": "写一份档案系统产品白皮书里的技术架构章节，这是市场材料，不是投标。",
+    "should_trigger": false
+  },
+  {
+    "query": "修改完整投标文件的页眉页码、目录和表格样式，正文内容一个字都不要动。",
+    "should_trigger": false
+  },
+  {
+    "query": "把评分标准表转换成Excel，保持原单元格内容，不需要写任何响应。",
+    "should_trigger": false
+  }
+]

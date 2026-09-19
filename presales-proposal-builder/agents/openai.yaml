@@ -1,0 +1,6 @@
+interface:
+  display_name: "售前方案编写"
+  short_description: "面向政企与档案信息化项目，完成需求重构、产品映射、方案写作和交付质检"
+  default_prompt: "使用 $presales-proposal-builder 将客户需求映射到安铂现有能力，并形成可直接呈现的正式方案。"
+policy:
+  allow_implicit_invocation: true

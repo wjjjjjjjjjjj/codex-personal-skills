@@ -1,0 +1,59 @@
+{
+  "skill_name": "markitdown-converter",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "用 markitdown 把“客户汇报方案.docx”转换成 Markdown，放在原文件目录，原文件不能改。",
+      "expected_output": "生成非空的客户汇报方案.md，源 DOCX 保持不变，并报告绝对输出路径。",
+      "files": [],
+      "assertions": [
+        "源文件仍然存在且未被改写",
+        "生成的 Markdown 文件非空",
+        "Markdown 包含源文件的标题或关键正文"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "把这个项目资料目录里的 PDF、PPT 和 Excel 全部递归转成 md，输出到 markdown_output。",
+      "expected_output": "递归处理支持的文件，保留相对目录结构，汇总成功、失败和跳过数量。",
+      "files": [],
+      "assertions": [
+        "只处理支持的文件类型",
+        "输出目录保留输入文件的相对层级",
+        "每个成功项都有非空 Markdown 文件",
+        "结果包含成功、失败和跳过统计"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "这个 PDF 已经有同名 Markdown 了，再转一次，但不要覆盖我之前的文件。",
+      "expected_output": "保留原 Markdown，并生成带 converted 后缀的新文件。",
+      "files": [],
+      "assertions": [
+        "已有 Markdown 内容保持不变",
+        "新输出使用 converted 或数字后缀",
+        "新输出文件非空"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "总结这份 PDF 的主要内容，不需要生成 md 文件。",
+      "expected_output": "使用 PDF 阅读能力，不触发 markitdown-converter。",
+      "files": [],
+      "assertions": [
+        "不应仅因需要读取 PDF 而触发本 Skill",
+        "不应创建 Markdown 文件"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "直接把 https://example.com/report.pdf 转成 Markdown。",
+      "expected_output": "先通过安全网页获取流程下载到受控本地路径，再转换本地副本。",
+      "files": [],
+      "assertions": [
+        "不得把 URL 直接传给 convert.ps1",
+        "本地下载完成前不得报告转换成功"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+commitment_id,commitment_type,original_text,final_text,requirement_refs,response_section,source_ref,evidence_refs,quantified_value,conditions,owner,confirmation_status,approver,approval_date,conflict_check,disposition,notes
+COM-001,服务,提供终身免费升级,提供终身免费升级,REQ-003,6.5 售后服务,SRC-001#4.2,,,不限升级次数,服务部门,无需新增承诺,,,无冲突,保留,

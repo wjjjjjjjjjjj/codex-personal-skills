@@ -1,0 +1,12 @@
+{
+  "skill_name": "amber-pptx-style",
+  "evals": [
+    {"id": "new-deck-awaits-approval", "prompt": "给某集团做一份档案数据治理领导汇报 PPT。", "expected_output": "完整逐页主要内容稿；每页包含问题、解释、论据、结论和承接；明确等待确认；不生成 PPTX。", "files": []},
+    {"id": "confirmed-deck-generates", "prompt": "附件是已确认的逐页内容计划，approval_status=confirmed。请按该版本生成安铂 PPT。", "expected_output": "验证确认状态，进入内容锁定和动态版式；由当前 Presentations skill 实现 PPTX，并渲染全部最终页、逐页检查和运行溢出检查。", "files": ["fixtures/confirmed-content-plan.json"]},
+    {"id": "revision-requires-reapproval", "prompt": "附件是已确认的内容计划。请新增一页实施风险控制，并改变第1页核心结论。", "expected_output": "将原版本标为 superseded，更新受影响页面和承接，形成新版本并重新请求确认；当前不生成 PPTX。", "files": ["fixtures/confirmed-content-plan.json"]},
+    {"id": "non-amber-exit", "prompt": "使用 CyberPPT 风格制作这份方案，不要使用安铂规范。", "expected_output": "不接管安铂视觉规范。", "files": []},
+    {"id": "ppt-master-exit", "prompt": "明确使用 ppt-master 的 SVG 多角色流水线制作这份演示稿。", "expected_output": "由 ppt-master 单独主控，Amber 不接管。", "files": []},
+    {"id": "customer-template-route", "prompt": "按我提供的客户 PPTX 模板重做这份汇报，不要改母版和客户 VI。", "expected_output": "Presentations 模板继承流程优先；Amber 不覆盖客户视觉。", "files": []},
+    {"id": "minor-edit-no-full-gate", "prompt": "把现有 PPT 第8页的错别字改掉。", "expected_output": "执行局部修改，不要求重新输出整套内容稿，但仍由 Presentations 完成文件编辑和渲染复核。", "files": []}
+  ]
+}

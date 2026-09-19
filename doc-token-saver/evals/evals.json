@@ -1,0 +1,29 @@
+{
+  "skill_name": "doc-token-saver",
+  "evals": [
+    {
+      "id": "large-doc-summary-with-locators",
+      "prompt": "archive/ 里有一份 86 页招标文件和三份产品材料，请据此准备技术方案。",
+      "expected_output": "先按项目规则在 summaries/ 建立不超过 2000 字、带页码或章节定位的摘要；招标条款和承诺在成稿前回读原文。",
+      "files": []
+    },
+    {
+      "id": "explicit-full-source-override",
+      "prompt": "不要只看上次摘要，这次请完整读取原始招标文件并逐条核对评分标准。",
+      "expected_output": "以原文为准，不用摘要阻止完整读取。",
+      "files": []
+    },
+    {
+      "id": "short-files-do-not-trigger",
+      "prompt": "把这两份各 3 页的会议纪要合并成一段项目背景。",
+      "expected_output": "不强制启用长文档预处理，不额外增加结构确认门。",
+      "files": []
+    },
+    {
+      "id": "conversion-routes-away",
+      "prompt": "把这批 DOCX 批量转成 Markdown，不需要写报告。",
+      "expected_output": "转交 markitdown-converter，本 Skill 不主控。",
+      "files": []
+    }
+  ]
+}

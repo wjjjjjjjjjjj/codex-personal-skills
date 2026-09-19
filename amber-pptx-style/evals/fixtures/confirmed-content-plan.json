@@ -1,0 +1,20 @@
+{
+  "content_plan_version": "v1",
+  "approval_status": "confirmed",
+  "deck_context": {
+    "audience": "集团决策层",
+    "objective": "说明建设必要性与实施路径",
+    "core_thesis": "应以分阶段治理建设降低改造风险"
+  },
+  "slides": [
+    {
+      "slide_id": 1,
+      "title": "先统一治理目标，再逐步建设能力",
+      "page_question": "为什么不能直接堆叠功能模块？",
+      "problem_explanation": "跨系统、跨门类的业务差异会使孤立功能难以形成一致的数据与流程闭环。",
+      "arguments": [{"claim": "用户明确提出需要统一归档与利用效率", "evidence_id": "E01", "source_status": "user_input"}],
+      "core_message": "建设应先建立统一治理目标，再按风险可控的路径落地。",
+      "transition": "为下一页的分阶段路线说明建设原则。"
+    }
+  ]
+}

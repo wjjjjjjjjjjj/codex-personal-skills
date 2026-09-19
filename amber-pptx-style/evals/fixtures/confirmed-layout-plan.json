@@ -1,0 +1,18 @@
+{
+  "content_plan_version": "v1",
+  "approval_status": "confirmed",
+  "slides": [
+    {
+      "slide_id": 1,
+      "role": "Executive Framing",
+      "core_message": "建设应先建立统一治理目标，再按风险可控的路径落地。",
+      "content_signals": ["决策汇报", "阶段"],
+      "layout_family": "流程路线",
+      "layout_variant": "三阶段路线图",
+      "visual_focus": "横向时间路线图",
+      "components": ["阶段节点", "交付物", "风险控制"],
+      "density": "medium",
+      "layout_reason": "本页需要说明建设先后顺序和风险控制，因此使用路线图表达比卡片更清楚。"
+    }
+  ]
+}

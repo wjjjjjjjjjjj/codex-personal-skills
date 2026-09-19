@@ -1,0 +1,6 @@
+interface:
+  display_name: "完整投标文件编制"
+  short_description: "总控资格、商务、报价、技术合稿与整本提交检查"
+  default_prompt: "使用 $bid-document-builder 主控完整投标或响应文件；技术章节交给 $bid-technical-proposal，功能级报价工作簿按需交给 $archive-quotation-builder，Word 生成与全页渲染交给当前 $documents。"
+policy:
+  allow_implicit_invocation: true

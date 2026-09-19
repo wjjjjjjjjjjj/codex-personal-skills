@@ -1,0 +1,6 @@
+interface:
+  display_name: "档案项目功能报价"
+  short_description: "分配档案信息化功能预算并完成严格金额对账"
+  default_prompt: "使用 $archive-quotation-builder 建立报价契约、精确分配预算，并用 Spreadsheets 生成可审计工作簿。"
+policy:
+  allow_implicit_invocation: true

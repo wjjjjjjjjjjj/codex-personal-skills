@@ -1,0 +1,6 @@
+interface:
+  display_name: "长文档上下文预算"
+  short_description: "为大体量材料建立摘要、来源定位和原文回读计划。"
+  default_prompt: "使用 $doc-token-saver 为这批长文档建立可追溯摘要和后续原文回读计划。"
+policy:
+  allow_implicit_invocation: true

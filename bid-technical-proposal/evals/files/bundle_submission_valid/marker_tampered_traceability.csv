@@ -1,0 +1,5 @@
+requirement_id,parent_id,source_ref,requirement_text,requirement_type,marker,action,object_scope,constraints,acceptance_evidence_requirement,response_section,applicability,capability_status,capability_confirmer,capability_confirmed_at,response_progress,evidence_refs,evidence_status,commitment_refs,deviation_status,deviation_note,owner,review_status,notes
+REQ-001,,SRC-001#3.1,系统应支持档案全文检索,功能,无,支持,档案全文,,功能验收,3.2.1 全文检索,适用,已具备,产品经理,2026-07-27,已锁定,SRC-002#2.1,已核验可引用,,无偏离,,产品经理,已锁定,
+REQ-002,,SRC-001#3.2,系统应提供性能测试报告,证明材料,▲,提供,性能测试报告,,报告核验,3.2.2 性能证明,适用,已具备,产品经理,2026-07-27,已锁定,SRC-002#附件A,已核验可引用,,无偏离,,产品经理,已锁定,
+REQ-003,,SRC-001#4.2,一般故障4小时内响应,服务,无,响应,一般故障,4小时,服务记录核验,6.5 售后服务,适用,已具备,服务平台主管,2026-07-27,已锁定,SRC-003#审批记录1,已核验可引用,COM-001,无偏离,,服务部门,已锁定,
+REQ-004,,SRC-001#5.1,移动端建设不在本项目采购范围,其他,无,判断,移动端建设,,范围确认,7.1 适用性说明,不适用已确认,,,,已锁定,SRC-001#5.1,不适用,,无偏离,采购范围已明确排除移动端建设,售前负责人,已锁定,

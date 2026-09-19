@@ -1,0 +1,4 @@
+requirement_id,parent_id,source_ref,requirement_text,requirement_type,marker,mandatory,score_id,score_text,score_max,score_method,full_score_action,full_score_content,full_score_evidence,full_score_format,score_threshold,deduction_triggers,acceptance_evidence_requirement,notes
+REQ-001,,SRC-001#3.1,系统应支持档案全文检索,功能,★,是,,,,,,,,,,,功能验收,
+REQ-002,,SRC-001#3.2,系统应提供性能测试报告,证明材料,▲,否,SC-01-01,提供性能测试报告得5分,5,客观计分,提供,说明测试范围与结果,性能测试报告,逐条响应,,未提供报告不得分,报告核验,
+REQ-003,,SRC-001#4.2,一般故障4小时内响应,服务,无,否,,,,,,,,,,,服务记录核验,

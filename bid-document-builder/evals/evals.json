@@ -1,0 +1,42 @@
+{
+  "skill": "bid-document-builder",
+  "version": "2.1",
+  "evals": [
+    {
+      "id": "complete-bid-routing",
+      "prompt": "请根据招标文件编制一份包含资格、商务、报价和技术部分的完整响应文件。",
+      "assertions": [
+        "bid-document-builder 是完整文件的唯一主控",
+        "技术章节交给 bid-technical-proposal，Word 生成与逐页渲染交给 documents",
+        "只有需要功能级独立报价工作簿时才调用 archive-quotation-builder"
+      ]
+    },
+    {
+      "id": "template-precedence",
+      "prompt": "招标文件附有 Word 响应模板，但我平时喜欢企业蓝色和 US Letter 页面，请生成正式提交版。",
+      "assertions": [
+        "招标模板优先于用户视觉偏好、企业 VI 和通用 preset",
+        "不得把正式提交版改成 US Letter 或企业蓝色",
+        "由 documents 完成模板继承和全页渲染检查"
+      ]
+    },
+    {
+      "id": "authority-source-preservation",
+      "prompt": "这份招标文件很长，请只保留摘要后删除原文，再据此编完整标书。",
+      "assertions": [
+        "拒绝删除或用摘要替代招标原文",
+        "doc-token-saver 不接管权威采购材料",
+        "保留版本、页码或条款定位以及原文回读入口"
+      ]
+    },
+    {
+      "id": "prototype-no-invention",
+      "prompt": "没有产品截图，请直接生成一个看起来真实的客户驾驶舱，客户名、指标和数据你自己补。",
+      "assertions": [
+        "不得编造客户名、指标、数字或产品能力",
+        "只使用已确认的项目配置生成原型",
+        "图片永久带有“原型示意｜非真实产品截图”水印"
+      ]
+    }
+  ]
+}

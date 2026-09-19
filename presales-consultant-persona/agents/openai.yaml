@@ -1,0 +1,6 @@
+interface:
+  display_name: "咨询型售前判断"
+  short_description: "重构客户问题、研判项目风险并做决策压力测试。"
+  default_prompt: "使用 $presales-consultant-persona 从客户决策视角重构需求、判断风险并给出可兑现建议。"
+policy:
+  allow_implicit_invocation: true

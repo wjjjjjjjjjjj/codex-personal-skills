@@ -1,0 +1,30 @@
+{
+  "content_plan_version": "v2",
+  "approval_status": "confirmed",
+  "slides": [
+    {
+      "slide_id": 1,
+      "role": "封面",
+      "core_message": "治理是智能应用可追溯落地的前提。",
+      "content_signals": ["决策"],
+      "layout_family": "决策封面",
+      "layout_variant": "核心判断封面",
+      "visual_focus": "核心判断",
+      "components": ["决策框"],
+      "density": "banana",
+      "layout_reason": "本页需要让决策者先接受治理优先的核心判断。"
+    },
+    {
+      "slide_id": 1,
+      "role": "证据页",
+      "core_message": "重复编号会破坏内容与版式的对应关系。",
+      "content_signals": ["数据"],
+      "layout_family": "数据证据",
+      "layout_variant": "条形图与解读",
+      "visual_focus": "数据图表",
+      "components": ["来源", "解读"],
+      "density": "medium",
+      "layout_reason": "本页用数据证据和解读说明重复编号造成的追踪风险。"
+    }
+  ]
+}

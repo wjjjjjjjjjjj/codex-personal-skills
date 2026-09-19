@@ -1,0 +1,6 @@
+interface:
+  display_name: "演示数据构造"
+  short_description: "构造合成、可验证的档案业务演示与 PoC 数据包"
+  default_prompt: "使用 $demo-data-builder 构造可验证的合成演示数据，标明事实边界并运行对应校验。"
+policy:
+  allow_implicit_invocation: true

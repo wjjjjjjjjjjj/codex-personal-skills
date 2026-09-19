@@ -1,0 +1,32 @@
+{
+  "skill": "presales-proposal-builder",
+  "version": "1.0",
+  "evals": [
+    {
+      "id": "proposal-positive-customer",
+      "prompt": "为某市档案馆编写一份可直接呈报领导的档案数据治理建设方案，先映射现有产品能力，未知数据不要编造。",
+      "assertions": [
+        "应触发 presales-consultant-persona 与 presales-proposal-builder",
+        "应将产品能力映射作为内部分析，不暴露到客户稿",
+        "不应编造客户数据、金额、工期或能力"
+      ]
+    },
+    {
+      "id": "proposal-negative-internal-weekly",
+      "prompt": "把研发部门本周工作整理成一页内部周报，用于例会汇报。",
+      "assertions": [
+        "不应仅因出现汇报而触发本 Skill",
+        "不应套用售前需求重构或产品能力映射"
+      ]
+    },
+    {
+      "id": "proposal-docx-toc",
+      "prompt": "把已确认的客户方案生成正式 DOCX，正文需要目录，项目没有分期。",
+      "assertions": [
+        "应叠加 documents",
+        "应使用动态 TOC 并全篇渲染复核",
+        "不应擅自出现一期、本期或二期"
+      ]
+    }
+  ]
+}

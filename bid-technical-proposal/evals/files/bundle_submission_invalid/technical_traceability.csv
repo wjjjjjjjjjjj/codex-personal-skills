@@ -1,0 +1,5 @@
+requirement_id,parent_id,source_ref,requirement_text,requirement_type,marker,action,object_scope,constraints,acceptance_evidence_requirement,response_section,applicability,capability_status,capability_confirmer,capability_confirmed_at,response_progress,evidence_refs,evidence_status,commitment_refs,deviation_status,deviation_note,owner,review_status,notes
+REQ-001,,SRC-001,系统应支持档案全文检索,功能,无,支持,档案全文,,功能验收,,适用,条件具备,产品经理,2026-07-27,已起草,,待补证,,无偏离,,产品经理,未复核,
+REQ-001,,SRC-999#3.2,系统应提供【待补充】证明材料,证明材料,▲,提供,证明材料,,材料核验,,适用,待核验,,,待证据/待确认,,无证据,,待澄清,,产品经理,未复核,
+REQ-CYCLE-A,REQ-CYCLE-B,SRC-001#3.3,循环父级测试A,功能,无,支持,测试对象A,,功能验收,3.3 测试A,适用,已具备,产品经理,2026-07-27,已锁定,SRC-001#3.3,已核验可引用,,无偏离,,产品经理,已锁定,
+REQ-CYCLE-B,REQ-CYCLE-A,SRC-001#3.4,循环父级测试B,功能,无,支持,测试对象B,,功能验收,3.4 测试B,适用,已具备,产品经理,2026-07-27,已锁定,SRC-001#3.4,已核验可引用,,无偏离,,产品经理,已锁定,

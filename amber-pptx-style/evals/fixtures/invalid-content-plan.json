@@ -1,0 +1,33 @@
+{
+  "content_plan_version": "v2",
+  "approval_status": "confirmed",
+  "deck_context": {
+    "audience": "集团决策层",
+    "objective": "判断是否立项",
+    "core_thesis": "先治理再智能"
+  },
+  "slides": [
+    {
+      "slide_id": 0,
+      "title": "先治理再智能",
+      "page_question": "为什么现在不能直接上线智能应用？",
+      "problem_explanation": "数据边界和责任口径尚未统一，直接上线会放大错误并削弱追溯能力。",
+      "arguments": [
+        {"claim": "外部政策要求关键判断可追溯", "source_status": "sourced"}
+      ],
+      "core_message": "先完成治理和责任边界，再引入可追溯的智能能力。",
+      "transition": "下一页说明治理范围。"
+    },
+    {
+      "slide_id": 0,
+      "title": "重复编号",
+      "page_question": "为什么需要唯一编号和来源定位？",
+      "problem_explanation": "重复页码会破坏内容锁、版式计划和变更追踪之间的对应关系。",
+      "arguments": [
+        {"claim": "内容锁依赖稳定标识", "source_status": "user_input"}
+      ],
+      "core_message": "每页必须拥有唯一且稳定的标识。",
+      "transition": "进入版式规划。"
+    }
+  ]
+}

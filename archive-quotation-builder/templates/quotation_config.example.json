@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "status": "draft",
+  "currency": "CNY",
+  "unit": "万元",
+  "tax_included": null,
+  "allocation_mode": "weighted_leaf_items",
+  "source_sections": [
+    {"section_key": "SYS-01", "section_title": "【待填系统名称】"}
+  ],
+  "systems": [
+    {
+      "section_key": "SYS-01",
+      "section_title": "【待填系统名称】",
+      "budget": "1.00",
+      "fixed_items": [],
+      "items": [
+        {"item_id": "ITEM-001", "name": "【待填叶子功能一】", "weight": "1"},
+        {"item_id": "ITEM-002", "name": "【待填叶子功能二】", "weight": "1"},
+        {"item_id": "ITEM-003", "name": "【待填叶子功能三】", "weight": "1"}
+      ]
+    }
+  ],
+  "fixed_items": [],
+  "expected_project_total": "1.00"
+}

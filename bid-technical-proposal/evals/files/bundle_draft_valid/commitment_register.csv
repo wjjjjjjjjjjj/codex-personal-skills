@@ -1,0 +1,2 @@
+commitment_id,commitment_type,original_text,final_text,requirement_refs,response_section,source_ref,evidence_refs,quantified_value,conditions,owner,confirmation_status,approver,approval_date,conflict_check,disposition,notes
+COM-001,SLA,一般故障4小时内响应,,REQ-003,6.5 售后服务,SRC-001#4.2,,4小时,按采购要求,服务部门,待审批,,,待核验,升级确认,等待服务部门审批

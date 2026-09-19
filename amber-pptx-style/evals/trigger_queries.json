@@ -1,0 +1,10 @@
+[
+  {"query": "给安铂做一份面向档案馆领导的项目立项 PPT，先给我逐页内容稿。", "should_trigger": true},
+  {"query": "把现有安铂售前 PPT 的故事线和页面结构全部重构。", "should_trigger": true},
+  {"query": "做一份投标答辩演示，沿用安铂蓝橙品牌。", "should_trigger": true},
+  {"query": "按我给的客户模板改 PPT，不要改母版和 VI。", "should_trigger": false},
+  {"query": "明确用 CyberPPT 的 8 套样张流程做这份材料。", "should_trigger": false},
+  {"query": "用 ppt-master 的 SVG 多角色流水线制作演示稿。", "should_trigger": false},
+  {"query": "把第 8 页错别字改掉，其他不动。", "should_trigger": false},
+  {"query": "把 Excel 里的销售数据做成一张独立图表，不要 PPT。", "should_trigger": false}
+]

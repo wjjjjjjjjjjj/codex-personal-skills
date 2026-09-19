@@ -1,0 +1,4 @@
+commitment_id,commitment_type,original_text,final_text,requirement_refs,response_section,source_ref,evidence_refs,quantified_value,conditions,owner,confirmation_status,approver,approval_date,conflict_check,disposition,notes
+COM-001,SLA,一般故障4小时内响应,一般故障4小时内响应,REQ-003,6.5 售后服务,SRC-001#4.2,SRC-003#审批记录1,4小时,按采购要求,服务部门,已审批,服务平台主管,2026-07-27,无冲突,保留,
+COM-POS,能力,在全文检索基础上增加字段组合检索,在全文检索基础上增加字段组合检索,REQ-002,3.2.1 全文检索,SRC-001#3.1,SRC-002#2.1,,限既有索引字段与已配置权限范围,产品部门,已审批,产品总监,2026-07-27,无冲突,保留,
+COM-ORPHAN,能力,提供组合条件保存能力,提供组合条件保存能力,REQ-001,3.2.1 全文检索,SRC-001#3.1,SRC-002#2.1,,限已授权用户保存检索组合,产品部门,已审批,产品总监,2026-07-27,无冲突,保留,

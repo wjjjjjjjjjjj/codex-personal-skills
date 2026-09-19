@@ -1,0 +1,6 @@
+interface:
+  display_name: "MarkItDown 文件转换"
+  short_description: "将明确指定的本地文件批量转换为 Markdown 并核验输出"
+  default_prompt: "使用 $markitdown-converter 转换这些本地文件，保留源文件，并核验每个输出。"
+policy:
+  allow_implicit_invocation: true

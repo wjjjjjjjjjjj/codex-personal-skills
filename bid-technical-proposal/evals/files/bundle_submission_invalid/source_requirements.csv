@@ -1,0 +1,5 @@
+requirement_id,parent_id,source_ref,requirement_text,requirement_type,marker,mandatory,score_id,score_text,score_max,score_method,full_score_action,full_score_content,full_score_evidence,full_score_format,score_threshold,deduction_triggers,acceptance_evidence_requirement,notes
+REQ-001,,SRC-001#3.1,系统应支持档案全文检索,功能,★,是,,,,,,,,,,,功能验收,
+REQ-002,,SRC-001#3.2,系统应提供证明材料,证明材料,▲,否,SC-01-01,提供证明材料得5分,5,客观计分,提供,提交指定证明材料,指定证明材料,逐条响应,,缺失不得分,材料核验,
+REQ-CYCLE-A,REQ-CYCLE-B,SRC-001#3.3,循环父级测试A,功能,无,否,,,,,,,,,,,功能验收,
+REQ-CYCLE-B,REQ-CYCLE-A,SRC-001#3.4,循环父级测试B,功能,无,否,,,,,,,,,,,功能验收,

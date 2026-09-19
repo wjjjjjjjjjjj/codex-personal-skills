@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://amberdata.example/schemas/bid-technical-qa-report.schema.json",
+  "title": "Bid Technical Proposal QA Report",
+  "description": "Shared report shape emitted by validate_bid_bundle.py and scan_submission.py.",
+  "type": "object",
+  "required": [
+    "tool",
+    "report_version",
+    "generated_at",
+    "mode",
+    "valid",
+    "summary",
+    "issues"
+  ],
+  "properties": {
+    "tool": {
+      "enum": [
+        "validate_bid_bundle",
+        "scan_submission"
+      ]
+    },
+    "report_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "mode": {
+      "enum": [
+        "draft",
+        "submission"
+      ]
+    },
+    "valid": {
+      "type": "boolean"
+    },
+    "input": {
+      "type": "string"
+    },
+    "input_type": {
+      "type": "string"
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "parts_read": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "terms": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "errors",
+        "warnings",
+        "info"
+      ],
+      "properties": {
+        "errors": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "warnings": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "info": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "severity",
+          "code",
+          "message"
+        ],
+        "properties": {
+          "severity": {
+            "enum": [
+              "error",
+              "warning",
+              "info"
+            ]
+          },
+          "code": {
+            "type": "string",
+            "pattern": "^[A-Z][A-Z0-9_]+$"
+          },
+          "message": {
+            "type": "string",
+            "minLength": 1
+          },
+          "file": {
+            "type": "string"
+          },
+          "record": {
+            "type": "string"
+          },
+          "field": {
+            "type": "string"
+          },
+          "line": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "match": {
+            "type": "string"
+          },
+          "context": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": true
+}

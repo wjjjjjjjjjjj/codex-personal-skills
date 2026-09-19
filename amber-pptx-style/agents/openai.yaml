@@ -1,0 +1,6 @@
+interface:
+  display_name: "安铂 PPT 内容与品牌规范"
+  short_description: "先确认逐页内容，再按安铂品牌生成并完成全页质检。"
+  default_prompt: "使用 $amber-pptx-style：新建或重大重构时先提交完整逐页内容稿；局部修改或我已明确豁免时走快速路径，PPTX 实现与全页渲染由当前 Presentations skill 完成。"
+policy:
+  allow_implicit_invocation: true

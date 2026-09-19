@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.1",
+  "project_name": "",
+  "generated_at": "",
+  "sources": [
+    {
+      "source_id": "",
+      "source_level": "A",
+      "title": "",
+      "source_type": "tender",
+      "publisher": "",
+      "file": "",
+      "version": "",
+      "effective_date": "",
+      "received_at": "",
+      "priority": 1,
+      "hash_sha256": "",
+      "location": "",
+      "scope": "",
+      "status": "active",
+      "supersedes": [],
+      "registered_by": "",
+      "notes": ""
+    }
+  ]
+}

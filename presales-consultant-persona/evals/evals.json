@@ -1,0 +1,23 @@
+{
+  "skill_name": "presales-consultant-persona",
+  "evals": [
+    {
+      "id": "customer-requirement-reconstruction",
+      "prompt": "客户说想上一个档案 AI 平台，但没有说明业务目标。先帮我判断这个项目应该怎么问、值不值得继续投入。",
+      "expected_output": "重构表象需求、业务问题、失败风险和关键决策点，不直接堆功能。",
+      "files": []
+    },
+    {
+      "id": "bid-red-team-stays-internal",
+      "prompt": "编制完整投标响应，并做一轮决策者质询。没有要求展示内部评审记录。",
+      "expected_output": "persona 与 bid-document-builder 协同；C+ 质询留在内部，不进入正式提交包。",
+      "files": []
+    },
+    {
+      "id": "ordinary-internal-report-does-not-trigger",
+      "prompt": "把研发部门本周完成事项整理成内部周报汇报。",
+      "expected_output": "不因出现汇报二字触发售前判断层。",
+      "files": []
+    }
+  ]
+}

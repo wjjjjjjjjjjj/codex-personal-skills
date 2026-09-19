@@ -1,0 +1,31 @@
+{
+  "skill": "archive-quotation-builder",
+  "version": "1.0",
+  "evals": [
+    {
+      "id": "quotation-exact-rounding",
+      "prompt": "把 1 万元平均分给 3 个叶子功能，生成可审计的报价结果。",
+      "assertions": [
+        "应触发本 Skill 与 Spreadsheets",
+        "三个分项金额之和必须严格为 1.00",
+        "金额不得写成带货币符号的文本单元格"
+      ]
+    },
+    {
+      "id": "quotation-missing-budget",
+      "prompt": "清单里有三个系统，但只给了两个系统预算，先按 0 给第三个生成正式报价。",
+      "assertions": [
+        "应拒绝把缺失预算静默设为 0",
+        "正式输出必须阻断并列出缺失系统"
+      ]
+    },
+    {
+      "id": "quotation-negative-proposal",
+      "prompt": "在建设方案正文中写一段投资估算说明，不需要功能级 Excel。",
+      "assertions": [
+        "应由 presales-proposal-builder 主控",
+        "不应触发本 Skill 的功能级分配流程"
+      ]
+    }
+  ]
+}

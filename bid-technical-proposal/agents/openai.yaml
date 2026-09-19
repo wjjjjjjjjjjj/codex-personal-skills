@@ -1,0 +1,6 @@
+interface:
+  display_name: "投标技术方案"
+  short_description: "构建可追溯、可校验的技术标与技术响应"
+  default_prompt: "使用 $bid-technical-proposal 分析或编制技术标，建立独立采购需求基线，明确能力、证据与承诺边界，并在提交前运行门禁。"
+policy:
+  allow_implicit_invocation: true
