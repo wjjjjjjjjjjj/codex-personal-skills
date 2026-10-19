@@ -1,0 +1,4 @@
+interface:
+  display_name: "认知拓展"
+  short_description: "重新审视目标、挑战假设、借用跨领域方法，把未想到的可能性变成可验证行动"
+  default_prompt: "请使用 $ambition-expander 审视这个任务，找出可能被忽略的高价值方向，并在当前范围内推进最值得验证的一步。"
